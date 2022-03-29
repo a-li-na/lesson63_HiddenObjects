@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<style type="text/css">
+		body {
+			background-image: url(1.png);
+			background-size: cover;
+		}
+
+		@font-face {
+			font-family: alina;
+			src:  url(Comic_CAT.otf);
+		}
+
+		.text1 {
+			color: white;
+			font-family: alina;
+			font-size: 50px;
+		}
+
+
+		.num {
+			color: #ff0000;
+			font-family: alina;
+			font-size: 50px;
+		}
+
+		.box {
+			background-color: #e3b749;
+			border-radius: 50px;
+			margin-left: 20px;
+		}
+
+		.img1 {
+			position: absolute;
+			width: 50px;
+		}
+
+		.img2 {
+			position: absolute;
+			width: 100px;
+		}
+
+		.img3 {
+			position: absolute;
+			width: 50px;
+		}
+
+		.img4 {
+			position: absolute;
+			width: 70px;
+		}
+
+		.img5 {
+			position: absolute;
+			width: 60px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="box col-3">
+		<div style="text-align: center;">
+			<p class="text1"> Предметов осталось: <span class="num"> 5 </span> </p>
+		</div>
+		<div style="margin-left: 70px;">
+			<p> 
+				<ul>
+					<li class="text1 dnevnik">
+						Дневник
+					</li>
+
+					<li class="text1 kozel">
+						Козёл
+					</li>
+
+					<li class="text1 puhlya">
+						Пухля
+					</li>
+
+					<li class="text1 gideon">
+						Гидеон
+					</li>
+
+					<li class="text1 dipper">
+						Диппер 
+					</li>
+				</ul> 
+
+
+			</p>
+		</div>
+
+	</div>
+
+
+	<img src="дневник.png" class="img-fluid img1" style="margin-top: 250px; margin-left: 200px;">
+
+	<img src="козел.png" class="img-fluid img2" style="margin-top: 160px; margin-left: 1700px;">
+
+	<img src="пухля.png" class="img-fluid img3" style="margin-top: 130px; margin-left: 680px;">
+
+	<img src="гидеон.png" class="img-fluid img4" style="margin-top: 100px; margin-left: 1250px;">
+
+	<img src="диппер.png" class="img-fluid img5" style="margin-top: 50px; margin-left: 1100px;">
+
+	
+
+	<script type="text/javascript">
+		let bullets;
+		bullets = 5;
+
+
+	document.querySelector('.img1').onclick = function() {
+
+		bullets = bullets  - 1;
+		console.log(bullets);
+		document.querySelector('.num').innerHTML = bullets;
+		document.querySelector('.img1').style.display = 'none';
+		document.querySelector('.dnevnik').style.textDecoration = 'line-through';
+	}
+
+	document.querySelector('.img2').onclick = function() {
+
+		bullets = bullets  - 1;
+		console.log(bullets);
+		document.querySelector('.num').innerHTML = bullets;
+		document.querySelector('.img2').style.display = 'none';
+		document.querySelector('.kozel').style.textDecoration = 'line-through';
+	}
+
+	document.querySelector('.img3').onclick = function() {
+
+		bullets = bullets  - 1;
+		console.log(bullets);
+		document.querySelector('.num').innerHTML = bullets;
+		document.querySelector('.img3').style.display = 'none';
+		document.querySelector('.puhlya').style.textDecoration = 'line-through';
+	}
+
+	document.querySelector('.img4').onclick = function() {
+
+		bullets = bullets  - 1;
+		console.log(bullets);
+		document.querySelector('.num').innerHTML = bullets;
+		document.querySelector('.img4').style.display = 'none';
+		document.querySelector('.gideon').style.textDecoration = 'line-through';
+	}
+
+	document.querySelector('.img5').onclick = function() {
+
+		bullets = bullets  - 1;
+		console.log(bullets);
+		document.querySelector('.num').innerHTML = bullets;
+		document.querySelector('.img5').style.display = 'none';
+		document.querySelector('.dipper').style.textDecoration = 'line-through';
+	}
+
+
+	</script>
+
+</body>
+</html>
